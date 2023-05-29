@@ -18,7 +18,6 @@
 let getInfo;
 let score = 0;
 let gameData = null;
-
 let isResultsStored = false;
 
 // Traer de la API la información que queremos
@@ -184,6 +183,7 @@ function showNextQuestion() {
 
 }
 
+// Pintar el resultado en el DOM
 function showResult() {
     let resultsSection = document.querySelector('.results');
     let scoresData = JSON.parse(localStorage.getItem('gameData'));
